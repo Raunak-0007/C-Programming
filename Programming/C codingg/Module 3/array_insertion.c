@@ -11,11 +11,6 @@ int main(){
     scanf("%d", &pos);
     printf("Enter element to insert: ");
     scanf("%d", &val);
-    for (i = n - 1; i >= pos - 1; i--) {  // shift right
-        a[i + 1] = a[i];
-        a[pos - 1] = val;
-        n++;
-    }
     
     a[pos-1]=val;
     printf("Array after insertion: ");
